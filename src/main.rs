@@ -3,7 +3,7 @@ use std::io;
 // Example of const in rust. "_" used at beginning of name to remove "unused variable" warning.
 const _THREE_HOURS_IN_SECONDS: i32 = 60*60*3;
 
-// Main function: Examples of mutable an immutable variables.
+// Main function: Demonstrates each variable type
 fn main() {
     loop {
         print_pretty(print_options);
@@ -39,6 +39,7 @@ fn main() {
     }
 }
 
+// Prints all the options
 fn print_options() {
     println!("1. Shadowing Example");
     println!("2. Integer types");
@@ -50,6 +51,7 @@ fn print_options() {
     println!("8. Quit");
 }
 
+// Wraps the print functions to add spacing
 fn print_pretty(print_fn: fn()) {
     println!("");
     print_fn();
